@@ -1,0 +1,123 @@
+// 
+// calendar.scss
+//
+
+@import "~@fullcalendar/core/main.css";
+@import "~@fullcalendar/daygrid/main.css";
+@import "~@fullcalendar/timegrid/main.css";
+@import "~@fullcalendar/bootstrap/main.css";
+@import "~@fullcalendar/list/main.css";
+
+.fc-toolbar {
+    h2 {
+        font-size: 16px !important;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+}
+
+.app-calendar {
+    .btn {
+        text-transform: capitalize;
+    }
+}
+
+.fc {
+    th.fc-day-header {
+        background: $gray-200;
+        font-size: 13px;
+        line-height: 20px;
+        padding: 10px 0;
+        text-transform: uppercase;
+        font-weight: $font-weight-semibold;
+    }
+}
+
+.fc-unthemed {
+
+    .fc-content,
+    .fc-divider,
+    .fc-list-heading td,
+    .fc-list-view,
+    .fc-popover,
+    .fc-row,
+    tbody,
+    td,
+    th,
+    thead {
+        border-color: $gray-200;
+    }
+
+    td.fc-today {
+        background: $gray-300;
+    }
+}
+
+.fc-button {
+    background: $card-bg;
+    border-color: $border-color;
+    color: $gray-700;
+    text-transform: capitalize;
+    box-shadow: none;
+    padding: 6px 12px !important;
+    height: auto !important;
+}
+
+.fc-state-down,
+.fc-state-active,
+.fc-state-disabled {
+    background-color: $primary;
+    color: $white;
+    text-shadow: none;
+}
+
+.fc-event {
+    border-radius: 2px !important;
+    border: none !important;
+    cursor: move !important;
+    font-size: 0.8125rem !important;
+    margin: 5px 7px !important;
+    padding: 5px 5px !important;
+    text-align: center !important;
+}
+
+.fc-event,
+.fc-event-dot {
+    background-color: $primary;
+}
+
+.fc-event .fc-content {
+    color: $white;
+}
+
+
+@include media-breakpoint-down(sm) {
+
+    .fc-toolbar {
+        display: block !important;
+        text-align: center;
+
+        .fc-left,
+        .fc-right,
+        .fc-center {
+            float: none;
+            display: block;
+            clear: both;
+            margin: 10px 0;
+        }
+    }
+
+    .fc {
+        .fc-toolbar {
+            >* {
+                >* {
+                    float: none;
+                }
+            }
+        }
+    }
+
+    .fc-today-button {
+        display: none;
+    }
+}

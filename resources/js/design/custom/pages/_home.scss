@@ -1,0 +1,64 @@
+// 
+// home.scss
+//
+
+
+.section {
+    padding: 50px 80px;
+}
+.page-content {
+	padding-right: 0 !important;
+	padding-left: 0 !important;
+}
+
+.img-fluid {
+	width: 100% !important;
+}
+
+.slick-prev {
+	left: 92% !important;
+}
+.slick-next {
+	right: 2% !important;
+}
+.slick-prev, .slick-next {
+    top: -20px !important;
+}
+.slick-prev:before, .slick-next:before {
+	color: grey !important;
+	font-size: 30px !important;
+}
+
+.black {
+	color: black;
+}
+
+.font-75 {
+	font-size: 75px !important;
+}
+
+.overlay {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.blockquote {
+	padding: 0px 10px !important;
+	margin: 5px 5px 10px 15px !important;
+	font-size: 14px;
+	color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.synthesiser-section {
+	background-image: url('/images/synthesiser.jpg');
+	background-size: 100% 100%;
+	height: 400px;
+}
+.synthesiser-section {
+	.section {
+		height: 400px;
+	}
+}
+
