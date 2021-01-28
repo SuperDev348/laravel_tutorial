@@ -27,9 +27,9 @@ export default {
       // Reset the authError if it existed.
       this.error = null;
       return (
-        this.resetPassword({
+        this.resetPassword({    
           email: this.email
-        })
+        })      
           // eslint-disable-next-line no-unused-vars
           .then(token => {
             this.tryingToReset = false;

@@ -89,7 +89,7 @@ router.beforeResolve(async (routeTo, routeFrom, next) => {
         } else {
           // Otherwise, continue resolving the route.
           resolve()
-        }
+        }    
       })
     }
     // If a `beforeResolve` hook chose to redirect, just return.

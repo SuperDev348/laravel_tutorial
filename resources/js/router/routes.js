@@ -73,7 +73,7 @@ export default [
             },
         },
     },
-    {
+    {     
         path: '/tutorials',
         name: 'TutorialDashboard',
         component: () => import('../contains/tutorials/dashboard'),
