@@ -73,7 +73,7 @@ export default {
                   class="mt-3"
                   dismissible
                 >{{authError}}</b-alert>
-     
+
                 <b-form @submit.prevent="tryToLogIn" class="form-horizontal mt-4">
                   <b-form-group id="input-group-1" label="Email" label-for="input-1">
                     <b-form-input

@@ -29,7 +29,7 @@ export default {
       return (
         this.resetPassword({    
           email: this.email
-        })      
+        })  
           // eslint-disable-next-line no-unused-vars
           .then(token => {
             this.tryingToReset = false;
